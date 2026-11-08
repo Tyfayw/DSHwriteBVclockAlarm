@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/bg"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="36dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingRight="16dp"
+                android:text="@string/cancel"
+                android:textColor="?attr/text_secondary"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/new_alarm"
+                android:textColor="?attr/text_primary"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="44dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/time_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_time_card"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="24dp"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:id="@+id/time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:letterSpacing="0.01"
+                android:text="07:30"
+                android:textColor="?attr/text_primary"
+                android:textSize="72sp" />
+
+            <TextView
+                android:id="@+id/time_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="点击修改时间"
+                android:textColor="?attr/text_tertiary"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:letterSpacing="0.08"
+            android:text="@string/repeat_section"
+            android:textColor="?attr/text_secondary"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/day_1"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_chip_off"
+                android:gravity="center"
+                android:text="一"
+                android:textColor="?attr/text_secondary"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/day_2"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_chip_off"
+                android:gravity="center"
+                android:text="二"
+                android:textColor="?attr/text_secondary"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/day_3"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_chip_off"
+                android:gravity="center"
+                android:text="三"
+                android:textColor="?attr/text_secondary"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/day_4"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_chip_off"
+                android:gravity="center"
+                android:text="四"
+                android:textColor="?attr/text_secondary"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/day_5"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_chip_off"
+                android:gravity="center"
+                android:text="五"
+                android:textColor="?attr/text_secondary"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/day_6"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_chip_off"
+                android:gravity="center"
+                android:text="六"
+                android:textColor="?attr/text_secondary"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/day_7"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_chip_off"
+                android:gravity="center"
+                android:text="日"
+                android:textColor="?attr/text_secondary"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/preset_everyday"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/bg_chip_off"
+                android:gravity="center"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="每天"
+                android:textColor="?attr/text_secondary"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/preset_workday"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/bg_chip_off"
+                android:gravity="center"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="工作日"
+                android:textColor="?attr/text_secondary"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/preset_weekend"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:background="@drawable/bg_chip_off"
+                android:gravity="center"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="周末"
+                android:textColor="?attr/text_secondary"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:letterSpacing="0.08"
+            android:text="标签"
+            android:textColor="?attr/text_secondary"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/label_input"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_input"
+            android:hint="@string/label_hint"
+            android:inputType="text"
+            android:maxLength="24"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:singleLine="true"
+            android:textColor="?attr/text_primary"
+            android:textColorHint="?attr/text_tertiary"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:letterSpacing="0.08"
+            android:text="@string/ringtone_section"
+            android:textColor="?attr/text_secondary"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ring_current"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="@string/default_ringtone"
+                    android:textColor="?attr/text_primary"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/ring_badge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_badge"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="3dp"
+                    android:text="系统"
+                    android:textColor="@color/accent"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ring_sub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="?attr/text_tertiary"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/btn_default_ring"
+                    android:layout_width="0dp"
+                    android:layout_height="42dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_button_ghost"
+                    android:gravity="center"
+                    android:text="@string/use_default"
+                    android:textColor="?attr/text_primary"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/btn_bv"
+                    android:layout_width="0dp"
+                    android:layout_height="42dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_button_primary"
+                    android:gravity="center"
+                    android:text="用 B站 音频"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bv_panel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="?attr/stroke" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="视频 BV 号 / 链接"
+                    android:textColor="?attr/text_secondary"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/bv_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_input"
+                    android:hint="@string/bv_hint"
+                    android:inputType="text"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:singleLine="true"
+                    android:textColor="?attr/text_primary"
+                    android:textColorHint="?attr/text_tertiary"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/btn_resolve"
+                        android:layout_width="wrap_content"
+                        android:layout_height="44dp"
+                        android:background="@drawable/bg_button_primary"
+                        android:gravity="center"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:text="@string/resolve_download"
+                        android:textColor="@color/white"
+                        android:textSize="13sp" />
+
+                    <ProgressBar
+                        android:id="@+id/bv_progress"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="6dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_weight="1"
+                        android:max="100"
+                        android:progressTint="@color/accent"
+                        android:progressBackgroundTint="?attr/surface_high"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/bv_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:lineSpacingExtra="2dp"
+                    android:textColor="?attr/text_tertiary"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/bv_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/bg_input"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="12dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/btn_preview"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:background="@drawable/bg_pill"
+                        android:gravity="center"
+                        android:text="▶"
+                        android:textColor="@color/accent"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/bv_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:textColor="?attr/text_primary"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/bv_meta"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:textColor="?attr/text_tertiary"
+                            android:textSize="11sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:letterSpacing="0.08"
+            android:text="@string/snooze_section"
+            android:textColor="?attr/text_secondary"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/snooze_5"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_chip_off"
+                android:gravity="center"
+                android:text="5 分钟"
+                android:textColor="?attr/text_secondary"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/snooze_10"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_chip_off"
+                android:gravity="center"
+                android:text="10 分钟"
+                android:textColor="?attr/text_secondary"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/snooze_15"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_chip_off"
+                android:gravity="center"
+                android:text="15 分钟"
+                android:textColor="?attr/text_secondary"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/snooze_20"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_chip_off"
+                android:gravity="center"
+                android:text="20 分钟"
+                android:textColor="?attr/text_secondary"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/snooze_30"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_chip_off"
+                android:gravity="center"
+                android:text="30 分钟"
+                android:textColor="?attr/text_secondary"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/vibrate_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:checked="true"
+            android:text="@string/vibrate_label"
+            android:textColor="?attr/text_secondary"
+            android:textSize="13sp" />
+
+        <CheckBox
+            android:id="@+id/loud_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:checked="true"
+            android:text="响铃时自动调大音量"
+            android:textColor="?attr/text_secondary"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="8dp"
+            android:lineSpacingExtra="2dp"
+            android:text="临时把闹钟音量调到最大，并补偿偏小的 B站 音频；停止响铃后恢复原音量"
+            android:textColor="?attr/text_tertiary"
+            android:textSize="11sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:letterSpacing="0.08"
+            android:text="响铃时长"
+            android:textColor="?attr/text_secondary"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/duration_1"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_chip_off"
+                android:gravity="center"
+                android:text="1 分钟"
+                android:textColor="?attr/text_secondary"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/duration_5"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_chip_off"
+                android:gravity="center"
+                android:text="5 分钟"
+                android:textColor="?attr/text_secondary"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/duration_10"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_chip_off"
+                android:gravity="center"
+                android:text="10 分钟"
+                android:textColor="?attr/text_secondary"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/duration_30"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_chip_off"
+                android:gravity="center"
+                android:text="30 分钟"
+                android:textColor="?attr/text_secondary"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/duration_60"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_chip_off"
+                android:gravity="center"
+                android:text="60 分钟"
+                android:textColor="?attr/text_secondary"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/bg_button_primary"
+            android:gravity="center"
+            android:text="保存闹钟"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/btn_delete"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="删除闹钟"
+            android:textColor="@color/danger"
+            android:textSize="13sp"
+            android:visibility="gone" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="@android:style/Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/bg</item>
+        <item name="android:colorBackground">@color/bg</item>
+        <item name="android:colorAccent">@color/accent</item>
+        <item name="android:colorControlActivated">@color/accent</item>
+        <item name="android:colorControlHighlight">#26FB7299</item>
+        <item name="android:statusBarColor">@color/bg</item>
+        <item name="android:navigationBarColor">@color/bg</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:textColorHint">@color/text_tertiary</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="bg">@color/bg</item>
+        <item name="surface">@color/surface</item>
+        <item name="surface_high">@color/surface_high</item>
+        <item name="surface_input">@color/surface_input</item>
+        <item name="stroke">@color/stroke</item>
+        <item name="stroke_soft">@color/stroke_soft</item>
+        <item name="accent_soft">@color/accent_soft</item>
+        <item name="text_primary">@color/text_primary</item>
+        <item name="text_secondary">@color/text_secondary</item>
+        <item name="text_tertiary">@color/text_tertiary</item>
+    </style>
+
+    <style name="AppTheme.Light" parent="@android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">#F5F7FA</item>
+        <item name="android:colorBackground">#F5F7FA</item>
+        <item name="android:colorAccent">@color/accent</item>
+        <item name="android:colorControlActivated">@color/accent</item>
+        <item name="android:colorControlHighlight">#26FB7299</item>
+        <item name="android:statusBarColor">#F5F7FA</item>
+        <item name="android:navigationBarColor">#F5F7FA</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:textColorPrimary">#1A1F29</item>
+        <item name="android:textColorSecondary">#5A6478</item>
+        <item name="android:textColorHint">#8A93A8</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="bg">#F5F7FA</item>
+        <item name="surface">#FFFFFF</item>
+        <item name="surface_high">#EFF2F7</item>
+        <item name="surface_input">#EEF1F6</item>
+        <item name="stroke">#D5DCE8</item>
+        <item name="stroke_soft">#E4E9F2</item>
+        <item name="accent_soft">#FDE8EF</item>
+        <item name="text_primary">#1A1F29</item>
+        <item name="text_secondary">#5A6478</item>
+        <item name="text_tertiary">#8A93A8</item>
+    </style>
+
+    <style name="RingTheme" parent="@android:style/Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/bg</item>
+        <item name="android:colorAccent">@color/accent</item>
+        <item name="android:statusBarColor">#0B0610</item>
+        <item name="android:navigationBarColor">#0B0610</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:windowShowWallpaper">false</item>
+        <item name="bg">@color/bg</item>
+        <item name="surface">@color/surface</item>
+        <item name="surface_high">@color/surface_high</item>
+        <item name="surface_input">@color/surface_input</item>
+        <item name="stroke">@color/stroke</item>
+        <item name="stroke_soft">@color/stroke_soft</item>
+        <item name="accent_soft">@color/accent_soft</item>
+        <item name="text_primary">@color/text_primary</item>
+        <item name="text_secondary">@color/text_secondary</item>
+        <item name="text_tertiary">@color/text_tertiary</item>
+    </style>
+</resources>

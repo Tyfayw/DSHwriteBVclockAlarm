@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="bg" format="color" />
+    <attr name="surface" format="color" />
+    <attr name="surface_high" format="color" />
+    <attr name="surface_input" format="color" />
+    <attr name="stroke" format="color" />
+    <attr name="stroke_soft" format="color" />
+    <attr name="accent_soft" format="color" />
+    <attr name="text_primary" format="color" />
+    <attr name="text_secondary" format="color" />
+    <attr name="text_tertiary" format="color" />
+</resources>

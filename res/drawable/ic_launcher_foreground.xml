@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- left bell -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M36.5,30a6.5,6.5 0 1,0 13,0a6.5,6.5 0 1,0 -13,0z" />
+    <!-- right bell -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M58.5,30a6.5,6.5 0 1,0 13,0a6.5,6.5 0 1,0 -13,0z" />
+    <!-- legs -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M41.5,78h4.5v8h-4.5zM62,78h4.5v8h-4.5z" />
+
+    <!-- clock ring -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillType="evenOdd"
+        android:pathData="M27,55a27,27 0 1,0 54,0a27,27 0 1,0 -54,0z M33.5,55a20.5,20.5 0 1,0 41,0a20.5,20.5 0 1,0 -41,0z" />
+
+    <!-- hands -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M52.3,41h3.4v15h-3.4z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,53.3h16v3.4h-16z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M51,55a3,3 0 1,0 6,0a3,3 0 1,0 -6,0z" />
+</vector>
