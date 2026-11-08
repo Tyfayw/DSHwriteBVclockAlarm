@@ -2,6 +2,14 @@
 
 一个轻量的 Android 闹钟：**闹钟铃声可以直接用 B 站视频里的声音，填 BV 号即可。**
 
+## 截图
+
+<p align="center">
+  <img src="screenshots/main.svg" alt="BV闹钟 主界面" width="300" />
+</p>
+
+> 当前为占位图。安装后可用 `adb exec-out screencap -p > screenshots/main.png` 截图并替换引用。
+
 - 包名：`com.bvalarm.app`
 - 版本：1.7
 - 最低系统：Android 8.0（API 26）
