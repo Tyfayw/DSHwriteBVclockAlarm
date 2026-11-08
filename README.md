@@ -1,4 +1,4 @@
-# BV闹钟
+# DSHwriteBVclockAlarm BV闹钟
 
 一个轻量的 Android 闹钟：**闹钟铃声可以直接用 B 站视频里的声音，填 BV 号即可。**
 
